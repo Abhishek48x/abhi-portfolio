@@ -6,6 +6,10 @@ function App() {
 
 function createParticleBurst(x, y) {
 
+const sound = new Audio("public/videos/click.mp3");
+  sound.volume = 0.4; 
+  sound.play().catch(e => {});
+
   const ring = document.createElement("span");
 
 ring.className = "click-ring";
@@ -235,6 +239,15 @@ React.useEffect(() => {
       <a href="#contact" className="secondary-button">
         Let's Work Together
       </a>
+
+      <a 
+  href="mailto:Abhishekprajapat851@gmail.com?subject=Request%20for%20Resume&body=Hi%20Abhishek,%0D%0A%0D%0AI%20would%20like%20to%20request%20your%20resume.%20Please%20share%20it%20with%20me.%0D%0A%0D%0ARegards,"
+  className="secondary-button"
+  style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+>
+  Get Resume <span>❤️</span>
+</a>
+
     </div>
 
     <div className="hero-socials">
