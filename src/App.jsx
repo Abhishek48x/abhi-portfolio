@@ -5,8 +5,8 @@ function App() {
   const [visibleSections, setVisibleSections] = useState({});
 
 function createParticleBurst(x, y) {
-
-const sound = new Audio("/click.mp3");
+  
+const sound = new Audio("/click.mp3?v=2");
   sound.volume = 0.4; 
   sound.play().catch(e => {});
 
