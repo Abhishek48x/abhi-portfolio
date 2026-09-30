@@ -6,7 +6,7 @@ function App() {
 
 function createParticleBurst(x, y) {
 
-const sound = new Audio("public/videos/click.mp3");
+const sound = new Audio("public/click.mp3");
   sound.volume = 0.4; 
   sound.play().catch(e => {});
 
